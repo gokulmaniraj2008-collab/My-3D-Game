@@ -1,41 +1,50 @@
-# My 3D Game — Real Solar System Explorer
+# My 3D Game — Sketchfab-Quality Real Solar System
 
-An interactive Three.js orrery based on real astronomical measurements from NASA/JPL sources. It is a visualization of the Sun, eight planets, Earth’s Moon, planetary rings, asteroid belt, orbital eccentricities, inclinations, and orbital periods.
+A browser-based Three.js Solar System viewer designed for a realistic, spacecraft-style 3D experience rather than a simple colored-sphere demo.
 
-## What is scientifically based
+## Realistic viewer
 
-- 8 planets in the correct order from the Sun.
-- Mean orbital distances and orbital periods based on NASA/JPL planetary data.
-- Orbital eccentricity and inclination values are represented.
-- Planet radius values are based on published planetary parameters.
-- Kepler-style orbital motion with a user-controlled simulation clock.
-- Planetary surface maps use NASA/JPL Solar System Simulator map resources where available.
+- Real NASA/JPL planetary map textures loaded onto 3D spheres where available.
+- Higher-resolution sphere geometry for smoother close-up views.
+- Sun with layered glow and strong solar lighting.
+- Earth atmospheric halo and Moon.
+- Saturn ring system.
+- Deep-space star field and asteroid belt.
+- Orbit camera with damping, zoom, touch/pinch support and click-to-inspect.
+- Planet focus controls and scientific information panel.
+- Kepler-style orbital motion with adjustable simulation speed.
 
-## Visualization note
+NASA/JPL's Solar System Simulator publishes planetary map resources, many of which are stitched from spacecraft imagery; NASA also maintains a collection of free 3D models and textures. The gas-giant maps are representative because their atmospheres change over time. citeturn0search3turn0search4
 
-A literal scale model cannot fit on a screen: the real Solar System has enormous empty distances and tiny planets relative to those distances. Therefore the app uses a **compressed visual distance scale** while preserving the measured orbital relationships and physical size ordering. This is an educational interactive orrery, not a precision ephemeris viewer.
+## Scientific boundary
+
+The viewer uses measured planetary radii, orbital distances, eccentricities, inclinations and orbital periods. Distances are visually compressed so the entire system can be explored on a screen. It is therefore a realistic educational orrery, **not a precision live-ephemeris replacement for NASA's Eyes on the Solar System**. NASA's Eyes application uses highly accurate data and imagery and supports time travel through simulated Solar System views. citeturn0search11
 
 ## Controls
 
 - Drag: orbit camera
-- Scroll/pinch: zoom
-- Click a planet: inspect data
+- Scroll / pinch: zoom
+- Click a planet: inspect
 - Planet buttons: focus camera
 - Simulation slider: change simulated days per second
 - Pause / Resume: stop or continue orbital motion
+- Reset view: return to system overview
+
+## Asset licensing
+
+NASA states that its content used in 3D models, including texture maps and polygon data, is generally not subject to U.S. copyright, subject to its media-use guidelines. Third-party Sketchfab models can have their own Creative Commons restrictions and attribution requirements, so this project does not silently copy arbitrary Sketchfab assets. citeturn0search15turn0search14
 
 ## Sources
 
-NASA Science: https://science.nasa.gov/solar-system/solar-system-facts/
-NASA planetary data: https://ssd.jpl.nasa.gov/planets/phys_par.html
-NASA/JPL orbital information: https://science.nasa.gov/solar-system/orbits-and-keplers-laws/
-NASA/JPL texture maps: https://space.jpl.nasa.gov/tmaps/
+- NASA/JPL Solar System Simulator texture maps: https://space.jpl.nasa.gov/tmaps/
+- NASA 3D Resources: https://github.com/nasa/NASA-3D-Resources
+- NASA Eyes on the Solar System: https://science.nasa.gov/eyes/
 
 ## Status
 
-**Real Solar System implementation pushed to GitHub.**
+**Realistic Solar System viewer upgraded and pushed to GitHub.**
 
-The web runtime still needs a real production build/deployment check before claiming Vercel production readiness.
+The production runtime/deployment still needs an actual build and browser verification before claiming Vercel production readiness.
 
 ## Security
 
