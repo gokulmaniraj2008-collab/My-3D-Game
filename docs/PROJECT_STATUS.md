@@ -1,25 +1,30 @@
 # Project Status
 
 ## Current stage
-Function + web runtime prototype.
+Real Solar System web runtime prototype.
 
 ## Implemented
-- Vite web runtime
-- Three.js procedural 3D room
-- Neon energy-core hero object
-- Consoles, pillars, lighting, floor grid and structural shell
-- WASD / arrow movement
-- Shift sprint
-- Pointer drag look controls
-- Responsive mobile presentation
+- Three.js interactive 3D solar system
+- Sun + eight planets
+- Earth Moon
+- Compressed-but-ordered orbital distance scale
+- Orbital eccentricity and inclination representation
+- Real planetary radius data
+- Kepler-style orbital periods
+- Saturn rings
+- Asteroid belt visualization
+- Planet selection and data panels
+- Simulation-speed control and pause/resume
+- NASA/JPL planetary map source references
 - Vercel build configuration
 
-## Gate status
-- Function: implemented in the prototype; formal human approval still required.
-- Form: procedural prototype only; full Blender/Form audit not completed.
-- Runtime: web build configuration added; deployment verification still required.
+## Accuracy boundary
+The app is an educational orrery, not a precision ephemeris service. Planet sizes and orbital data are based on NASA/JPL measurements, while visual distances are compressed so the system can be viewed interactively. Exact current sky positions are not claimed.
 
-The local `game-dev` CLI was not available in this execution environment, so the Game Development Studio CLI validation workflow could not be run. No provider credentials were requested or stored.
+## Gate status
+- Function: implemented.
+- Form: web 3D implementation present; full Blender/Form audit not completed.
+- Runtime: deployment verification still required.
 
 ## Repository
 `gokulmaniraj2008-collab/My-3D-Game`
