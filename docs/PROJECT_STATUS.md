@@ -1,22 +1,25 @@
 # Project Status
 
-## Current Stage
-Function-stage scaffold.
+## Current stage
+Function + web runtime prototype.
 
-## Combined Workflow
+## Implemented
+- Vite web runtime
+- Three.js procedural 3D room
+- Neon energy-core hero object
+- Consoles, pillars, lighting, floor grid and structural shell
+- WASD / arrow movement
+- Shift sprint
+- Pointer drag look controls
+- Responsive mobile presentation
+- Vercel build configuration
 
-1. Define room purpose, bounds, hero object, circulation, camera, and performance budget.
-2. Define reusable prop family and asset specifications.
-3. Generate/approve isolated references before any paid 3D provider work.
-4. Compose the room in Blender from procedural structure plus accepted assets.
-5. Validate geometry, openings, scale, support/orientation, symmetry, framing, and performance constraints.
-6. Export runtime tiers and verify the actual runtime.
-7. Push verified final artifacts to GitHub.
+## Gate status
+- Function: implemented in the prototype; formal human approval still required.
+- Form: procedural prototype only; full Blender/Form audit not completed.
+- Runtime: web build configuration added; deployment verification still required.
 
-## Gate Policy
-
-Do not claim final completion from a successful render alone. Function, Form, and Runtime approvals are separate gates.
+The local `game-dev` CLI was not available in this execution environment, so the Game Development Studio CLI validation workflow could not be run. No provider credentials were requested or stored.
 
 ## Repository
-
 `gokulmaniraj2008-collab/My-3D-Game`
