@@ -1,25 +1,41 @@
-# My 3D Game
+# My 3D Game — Real Solar System Explorer
 
-A production-oriented 3D game room project built with the Build 3D Game Rooms + Game Development Studio workflow.
+An interactive Three.js orrery based on real astronomical measurements from NASA/JPL sources. It is a visualization of the Sun, eight planets, Earth’s Moon, planetary rings, asteroid belt, orbital eccentricities, inclinations, and orbital periods.
 
-## Pipeline
+## What is scientifically based
 
-Concept → Room Design → Props → 3D Assets → Blender Composition → Validation → Runtime
+- 8 planets in the correct order from the Sun.
+- Mean orbital distances and orbital periods based on NASA/JPL planetary data.
+- Orbital eccentricity and inclination values are represented.
+- Planet radius values are based on published planetary parameters.
+- Kepler-style orbital motion with a user-controlled simulation clock.
+- Planetary surface maps use NASA/JPL Solar System Simulator map resources where available.
 
-## Project Structure
+## Visualization note
 
-- `docs/` — design brief, gate records, and project notes
-- `room/` — room layout and placement manifests
-- `assets/` — game-ready 3D assets and provenance
-- `blender/` — Blender source scene and composition scripts
-- `runtime/` — runtime-ready exports and validation evidence
-- `scripts/` — deterministic production/validation helpers
+A literal scale model cannot fit on a screen: the real Solar System has enormous empty distances and tiny planets relative to those distances. Therefore the app uses a **compressed visual distance scale** while preserving the measured orbital relationships and physical size ordering. This is an educational interactive orrery, not a precision ephemeris viewer.
+
+## Controls
+
+- Drag: orbit camera
+- Scroll/pinch: zoom
+- Click a planet: inspect data
+- Planet buttons: focus camera
+- Simulation slider: change simulated days per second
+- Pause / Resume: stop or continue orbital motion
+
+## Sources
+
+NASA Science: https://science.nasa.gov/solar-system/solar-system-facts/
+NASA planetary data: https://ssd.jpl.nasa.gov/planets/phys_par.html
+NASA/JPL orbital information: https://science.nasa.gov/solar-system/orbits-and-keplers-laws/
+NASA/JPL texture maps: https://space.jpl.nasa.gov/tmaps/
 
 ## Status
 
-**Function stage — project scaffold created.**
+**Real Solar System implementation pushed to GitHub.**
 
-The final room and game-ready assets will only be marked complete after the required Function, Form, and Runtime validation gates pass.
+The web runtime still needs a real production build/deployment check before claiming Vercel production readiness.
 
 ## Security
 
